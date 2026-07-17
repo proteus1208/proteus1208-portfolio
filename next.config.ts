@@ -1,7 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+
+  // GitHub Pages settings
+  output: "export",
+  basePath: "/proteus1208-portfolio",
+  assetPrefix: "/proteus1208-portfolio/",
+
   images: {
+    unoptimized: true,
     domains: ['localhost'],
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
@@ -13,14 +20,17 @@ const nextConfig = {
       },
     ],
   },
+
   experimental: {
     optimizeCss: true,
     scrollRestoration: false,
   },
+
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
-  // Fix for navigation issues
+
+  // Keep rewrites (not useful on GitHub Pages, but won't break build)
   async rewrites() {
     return {
       beforeFiles: [],
@@ -28,7 +38,9 @@ const nextConfig = {
       fallback: [],
     };
   },
-  headers() {
+
+  // Keep headers (not applied by GitHub Pages)
+  async headers() {
     return [
       {
         source: '/:path*',
