@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ANIMATION_VARIANTS } from "@/lib/constants";
+import { SITE_CONFIG, ANIMATION_VARIANTS } from "@/lib/constants";
 import { educationData } from "@/data/achievements";
-import { GraduationCap, MapPin, Calendar } from "lucide-react";
+import { GraduationCap, MapPin, Calendar, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 import {
   ScrollReveal,
@@ -42,33 +42,44 @@ export function About() {
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div className="space-y-6 text-lg leading-relaxed">
               <p>
-                I am a Senior Full-Stack Developer with over 9 years of experience building web applications and software solutions for businesses.
+                I am a Full Stack Engineer with over 8 years of experience building scalable, high-performance web and mobile applications across modern JavaScript, Java, and Python ecosystems.
               </p>
               <p>
-                I work across both frontend and backend development, taking projects from planning and development to deployment and maintenance. My experience includes modern JavaScript frameworks, backend development, RESTful APIs, cloud platforms, databases, and microservices.
-              </p>
-
-              <p>
-                I enjoy writing clean, maintainable code and building reliable applications that provide a great user experience and solve real business problems.
+                I specialize in designing distributed systems, backend APIs, and cloud-native architectures that support high-traffic production environments. I have strong hands-on experience in React, Node.js, Spring Boot, FastAPI, and AWS, with a focus on system performance, scalability, and reliability.
               </p>
               <p>
-                In addition to full-stack development, I have hands-on experience with Blockchain and Artificial Intelligence (AI). I use these technologies when they are the right fit to create innovative and scalable solutions.
+                I consistently deliver optimized, production-ready solutions that improve latency, throughput, and overall system efficiency.
               </p>
-              <p>
-                I enjoy working with teams, solving challenging technical problems, and continuously learning new technologies to improve my skills and deliver high-quality software.
-              </p>
+              <div className="pt-2 space-y-2 text-base text-muted-foreground">
+                <p className="flex items-center gap-2">
+                  <Mail className="h-4 w-4 text-primary" />
+                  <a href={`mailto:${SITE_CONFIG.links.email}`} className="hover:text-primary transition-colors">
+                    {SITE_CONFIG.links.email}
+                  </a>
+                </p>
+                <p className="flex items-center gap-2">
+                  <Phone className="h-4 w-4 text-primary" />
+                  <a href={`tel:${SITE_CONFIG.phone}`} className="hover:text-primary transition-colors">
+                    {SITE_CONFIG.phone}
+                  </a>
+                </p>
+                <p className="flex items-center gap-2">
+                  <MapPin className="h-4 w-4 text-primary" />
+                  {SITE_CONFIG.location}
+                </p>
+              </div>
             </div>
 
             <div className="relative flex flex-col items-center">
               <div className="absolute -top-24">
                 <div className="relative w-75 h-75 rounded-full p-[4px] border-2 border-sky-800 shadow-lg">
-                  <div className="rounded-full overflow-hidden w-full h-full relative">
+                  <div className="rounded-full overflow-hidden w-full h-full relative bg-black">
                     <Image
                       src="/me/me.png"
-                      alt="Mark"
+                      alt="Tymon Charles Blow"
                       fill
                       sizes="300px"
-                      className="object-cover"
+                      className="object-cover object-center scale-110"
                       priority
                     />
                   </div>

@@ -12,42 +12,30 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  //-- Frontend
-  { name: "Laravel", logo: "https://skillicons.dev/icons?i=laravel" },
   { name: "TypeScript", logo: "https://skillicons.dev/icons?i=ts" },
+  { name: "JavaScript", logo: "https://skillicons.dev/icons?i=js" },
   { name: "React", logo: "https://skillicons.dev/icons?i=react" },
   { name: "Next.js", logo: "https://skillicons.dev/icons?i=nextjs&theme=light" },
-  { name: "Vue.js", logo: "https://skillicons.dev/icons?i=vuejs" },
+  { name: "Redux", logo: "https://skillicons.dev/icons?i=redux" },
   { name: "Tailwind", logo: "https://skillicons.dev/icons?i=tailwind" },
-  { name: "Material UI", logo: "https://skillicons.dev/icons?i=materialui" },
-  //--- Backend
-  { name: 'Nest.js', logo: "https://skillicons.dev/icons?i=nest" },
   { name: "Node.js", logo: "https://skillicons.dev/icons?i=nodejs" },
   { name: "Express", logo: "https://skillicons.dev/icons?i=express" },
-  { name: "Django", logo: "https://skillicons.dev/icons?i=django" },
-  { name: "Flask", logo: "https://skillicons.dev/icons?i=flask&theme=dark" },
-
-  //--- Blockchain
-  { name: "Solidity", logo: "https://skillicons.dev/icons?i=solidity" },
-  { name: "Web3.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/web3js/web3js-original.svg" },
-  { name: "Rust", logo: "https://skillicons.dev/icons?i=rust" },
-
-  //--- AI & Data Science
+  { name: "Nest.js", logo: "https://skillicons.dev/icons?i=nest" },
+  { name: "Java", logo: "https://skillicons.dev/icons?i=java" },
+  { name: "Spring", logo: "https://skillicons.dev/icons?i=spring" },
   { name: "Python", logo: "https://skillicons.dev/icons?i=python" },
-  { name: "Pandas", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
-  { name: "NumPy", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
-  
-  //--- Databases & Cloud
-  { name: "MongoDB", logo: "https://skillicons.dev/icons?i=mongodb" },
+  { name: "Django", logo: "https://skillicons.dev/icons?i=django" },
   { name: "PostgreSQL", logo: "https://skillicons.dev/icons?i=postgresql" },
-  { name: "Firebase", logo: "https://skillicons.dev/icons?i=firebase" },
+  { name: "MongoDB", logo: "https://skillicons.dev/icons?i=mongodb" },
+  { name: "Redis", logo: "https://skillicons.dev/icons?i=redis" },
+  { name: "GraphQL", logo: "https://skillicons.dev/icons?i=graphql" },
   { name: "AWS", logo: "https://skillicons.dev/icons?i=aws" },
-  
-  //--- Tools 
-  { name: "Vercel", logo: "https://skillicons.dev/icons?i=vercel&theme=light" },
   { name: "Docker", logo: "https://skillicons.dev/icons?i=docker" },
   { name: "Kubernetes", logo: "https://skillicons.dev/icons?i=kubernetes" },
-  { name: "Jest", logo: "https://skillicons.dev/icons?i=jest" },
+  { name: "Kafka", logo: "https://skillicons.dev/icons?i=kafka" },
+  { name: "Nginx", logo: "https://skillicons.dev/icons?i=nginx" },
+  { name: "Git", logo: "https://skillicons.dev/icons?i=git" },
+  { name: "GitHub", logo: "https://skillicons.dev/icons?i=github" },
  ];
 
 export function SkillsShowcase() {
@@ -67,9 +55,9 @@ export function SkillsShowcase() {
   }, [scrollYProgress]);
 
   const rows = [
-    skills.slice(0, 10),
-    skills.slice(10, 19),
-    skills.slice(19, 27),
+    skills.slice(0, 8),
+    skills.slice(8, 16),
+    skills.slice(16, 24),
   ];
 
   return (

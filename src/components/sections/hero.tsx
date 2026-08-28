@@ -79,7 +79,7 @@ function OrbitingShapes() {
 }
 
 function AnimatedName() {
-  const text = "Mark Kinsley Rimando";
+  const text = "Tymon Charles Blow";
   const chars = text.split("");
 
   return (
@@ -213,10 +213,10 @@ export function Hero() {
             <span className="block mt-2">
               <Typewriter
                 words={[
-                  "Tech Stack Hybrid Intelligent Next-Gen Engineer",
-                  "Senior Full-stack Developer",
-                  "Advanced Blockchain Innovator",
-                  "AI & Web Enthusiast",
+                  "Senior Full Stack Engineer",
+                  "React · Node.js · Spring Boot · FastAPI",
+                  "AWS · Docker · Kubernetes",
+                  "Distributed Systems & API Design",
                 ]}
                 className="text-primary font-semibold"
               />

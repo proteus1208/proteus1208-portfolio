@@ -1,20 +1,17 @@
 // App constants
 
 export const SITE_CONFIG = {
-  name: "Mark Kinsley Rimando",
+  name: "Tymon Charles Blow",
   description:
-    "Tech Stack Hybrid Intelligent Next-Gen Engineer & Technology | Full-stack Developer | Community Builder | AI & Web Enthusiast",
+    "Senior Full Stack Engineer with 8+ years building scalable web and mobile applications across JavaScript, Java, and Python ecosystems.",
   url: "https://proteus1208.github.io",
   ogImage: "/me/me.png",
+  location: "Harker Heights, TX",
+  phone: "+18563980906",
   links: {
-    email: "proteus1208@gmail.com",
+    email: "tymon.charles1224@outlook.com",
     github: "https://github.com/proteus1208",
     telegram: "https://t.me/proteus1208",
-    // leetcode: "https://leetcode.com/tshingen01",
-    // linkedin: "https://www.linkedin.com/in/mark-kinsley-rimando-9b1a4b1b2/",
-    // hackerrank: "https://www.hackerrank.com/profile/tshingen821",
-    // devTo: "https://dev.to/tshingen01",
-    // stackOverflow: "https://stackoverflow.com/users/32788228/tshingen01",
   }
 };
 
@@ -23,7 +20,6 @@ export const NAV_ITEMS = [
   { label: "About", href: "/about" },
   { label: "Experience", href: "/experience" },
   { label: "Projects", href: "/projects" },
-  { label: "Join Me", href: "/join-me" }
 ];
 
 export const ANIMATION_VARIANTS = {

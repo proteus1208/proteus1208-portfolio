@@ -4,8 +4,9 @@ import { SkillsShowcase} from "@/components/sections/skills";
 import { Achievements } from "@/components/sections/achievements";
 
 export const metadata: Metadata = {
-  title: "About | Mark Kinsley Rimando",
-  description: "Learn more about Mark Kinsley Rimando - Bachelor in Computer Science student at SLU University",
+  title: "About | Tymon Charles Blow",
+  description:
+    "Learn more about Tymon Charles Blow — Senior Full Stack Engineer based in Harker Heights, TX. BS Computer Science, University of Texas at San Antonio.",
 };
 
 export default function AboutPage() {

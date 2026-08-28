@@ -1,16 +1,14 @@
-import { Metadata } from "next";
+"use client";
 
-import { JoinMe } from "@/components/sections/join-me";
-
-export const metadata: Metadata = {
-  title: "Join Me | Mark Kinsley Rimando",
-  description: "Come and join me in building the future!",
-};
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function JoinMePage() {
-  return (
-    <div className="pt-20">
-      <JoinMe />
-    </div>
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/");
+  }, [router]);
+
+  return null;
 }

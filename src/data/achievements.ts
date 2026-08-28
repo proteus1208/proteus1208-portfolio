@@ -8,17 +8,29 @@ export interface Achievement {
 
 export const achievementsData: Achievement[] = [
   {
-    id: "coders-circle",
-    title: "Co-Founder",
-    organization: "Coders Circle",
-    description: "Built and scaled a growing tech community focused on coding culture, collaboration, and peer learning.",
+    id: "high-traffic-systems",
+    title: "High-Traffic Systems Delivery",
+    organization: "BairesDev",
+    description:
+      "Delivered scalable full-stack platforms supporting 800K+ monthly requests with strong reliability and efficient resource utilization.",
     impact: [
-      "Created a tech community of 1500+ students and developers",
-      "Organized tech sessions, networking events, and collaborative coding spaces",
-      "Encouraged open-source contributions and project-based learning",
-      "Built leadership and community engagement initiatives"
+      "Improved system performance by 35% under high production traffic",
+      "Reduced API response latency by 45% with Redis caching and query tuning",
+      "Improved release timelines by 20% through cross-functional collaboration",
     ],
-  }
+  },
+  {
+    id: "backend-throughput",
+    title: "Backend Throughput Optimization",
+    organization: "Keyhole Software",
+    description:
+      "Built scalable data processing pipelines and secure APIs that improved system throughput and database performance.",
+    impact: [
+      "Increased system throughput by 30% with Spring Boot and Python services",
+      "Reduced query execution time by 40% on large PostgreSQL and MongoDB datasets",
+      "Strengthened security with JWT authentication and RBAC",
+    ],
+  },
 ];
 
 export interface Education {
@@ -31,17 +43,10 @@ export interface Education {
 
 export const educationData: Education[] = [
   {
-    id: "slu",
-    institution: "Saint Louis University (PN)",
-    degree: "BS Information Technology Engineering",
-    duration: "2013 - 2018",
-    location: "Baguio, Philippines",
-  },
-  {
-    id: "slc",
-    institution: "Saint Louis Collage of San Fernando",
-    degree: "High School Diploma",
-    duration: "2009 - 2013",
-    location: "San Fernando City, Philippines",
+    id: "utsa",
+    institution: "University of Texas at San Antonio",
+    degree: "Bachelor of Science in Computer Science",
+    duration: "May 2018",
+    location: "San Antonio, TX, United States",
   },
 ];

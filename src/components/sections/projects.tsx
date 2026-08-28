@@ -28,7 +28,6 @@ export function Projects() {
     { value: "all", label: "All Projects" },
     { value: "mobile", label: "Mobile" },
     { value: "web", label: "Web" },
-    { value: "blockchain", label: "Blockchain" },
     { value: "ai", label: "AI" },
   ];
 

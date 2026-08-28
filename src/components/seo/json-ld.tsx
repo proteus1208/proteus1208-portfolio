@@ -6,12 +6,18 @@ export function JsonLd() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Mark Kinsley Rimando",
-    alternateName: "MKR",
+    name: SITE_CONFIG.name,
     url: SITE_CONFIG.url,
     email: SITE_CONFIG.links.email,
-    jobTitle: "Senior Full-Stack Developer",
+    telephone: SITE_CONFIG.phone,
+    jobTitle: "Senior Full Stack Engineer",
     description: SITE_CONFIG.description,
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Harker Heights",
+      addressRegion: "TX",
+      addressCountry: "US",
+    },
     sameAs: [
       SITE_CONFIG.links.github,
     ],
@@ -21,7 +27,8 @@ export function JsonLd() {
       address: {
         "@type": "PostalAddress",
         addressLocality: edu.location.split(", ")[0],
-        addressCountry: edu.location.split(", ")[1],
+        addressRegion: edu.location.split(", ")[1],
+        addressCountry: edu.location.split(", ")[2] || "US",
       },
     })),
     worksFor: experienceData.map(exp => ({
@@ -33,22 +40,22 @@ export function JsonLd() {
       },
     })),
     knowsAbout: [
-      "Cloud Computing",
       "Full Stack Development",
-      "Machine Learning",
-      "Blockchain",
-      "AWS",
-      "Azure",
+      "Distributed Systems",
       "React",
+      "Next.js",
       "Node.js",
-      "Python",
+      "Spring Boot",
+      "FastAPI",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "PostgreSQL",
       "TypeScript",
+      "Python",
+      "Java",
     ],
-    memberOf: achievementsData.map(achievement => ({
-      "@type": "Organization",
-      name: achievement.organization,
-      description: achievement.description,
-    })),
+    award: achievementsData.map(achievement => achievement.title),
   };
 
   return (

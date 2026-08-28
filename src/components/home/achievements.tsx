@@ -1,85 +1,43 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Award, Users } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
-import Image from "next/image";
-import Link from "next/link";
+import { Gauge, Server, Database, Rocket } from "lucide-react";
 
 const achievements = [
   {
-    icon: () => (
-      <Image
-        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/rest.png"
-        alt="Software Logo"
-        width={28}
-        height={28}
-        className="object-contain"
-        unoptimized
-      />
-    ),
-    url: 'https://www.hackerrank.com/certificates/aa8ed200da02',
-    title: "Software Engineer @ HackerRank",
+    icon: Gauge,
+    title: "Performance Gains",
     description:
-      "It covers topics like Problem-Solving, SQL, and REST API. I can contribute to building and improving the platform, enhancing user experience, and ensuring the reliability of our services.",
-    metric: "2026",
-    color: "rgba(99, 102, 241, 0.15)",
+      "Improved full-stack system performance by 35% under high production traffic using React, Next.js, Node.js, and PostgreSQL.",
+    metric: "35%",
+    color: "rgba(78, 205, 196, 0.15)",
   },
   {
-    icon: () => (
-      <Image
-        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png"
-        alt="Frontend Logo"
-        width={24}
-        height={24}
-        className="object-contain brightness-125"
-        unoptimized
-      />
-    ),
-    url: 'https://www.hackerrank.com/certificates/9a5c52f7b22c',
-    title: "Frontend Developer @ HackerRank",
+    icon: Server,
+    title: "Monthly Requests Supported",
     description:
-      "It covers topics like React, CSS, and JavaScript. I can contribute to building and improving the platform, enhancing user experience, and ensuring the reliability of our services.",
-    metric: "2026",
-    color: "rgba(139, 92, 246, 0.15)",
+      "Designed backend services with Node.js, Spring Boot, and FastAPI supporting 800K+ monthly requests with strong reliability.",
+    metric: "800K+",
+    color: "rgba(216, 178, 242, 0.15)",
   },
   {
-    icon: () => (
-      <Image
-        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/rust.png"
-        alt="R Language Logo"
-        width={24}
-        height={24}
-        className="object-contain brightness-125"
-        unoptimized
-      />
-    ),
-    url: 'https://www.hackerrank.com/certificates/3aa14f420bb0',
-    title: "R Language Skill @ HackerRank",
+    icon: Database,
+    title: "Latency Reduction",
     description:
-      "It includes slightly advanced concepts of the R programming language such as data manipulation, visualization, and statistical modeling, writing efficient and readable code, and working with the R ecosystem.",
-    metric: "2026",
-    color: "rgba(139, 92, 246, 0.15)",
+      "Cut API response latency by 45% during peak traffic with Redis caching, indexing strategies, and query tuning.",
+    metric: "45%",
+    color: "rgba(78, 205, 196, 0.15)",
   },
   {
-    icon: () => (
-      <Image
-        src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png"
-        alt="Python Logo"
-        width={24}
-        height={24}
-        className="object-contain brightness-125"
-        unoptimized
-      />
-    ),
-    url: 'https://www.hackerrank.com/certificates/81137fffe087',
-    title: "Python Skill @ HackerRank",
+    icon: Rocket,
+    title: "Faster Releases",
     description:
-      "It covers topics like Python syntax, data structures, and algorithms. I can contribute to building and improving the platform, enhancing user experience, and ensuring the reliability of our services.",
-    metric: "2026",
-    color: "rgba(139, 92, 246, 0.15)",
+      "Improved release timelines by 20% through cross-functional collaboration and reliable CI/CD delivery practices.",
+    metric: "20%",
+    color: "rgba(216, 178, 242, 0.15)",
   },
 ];
 
@@ -127,7 +85,7 @@ export function Achievements() {
           transition={{ duration: 0.6 }}
           className="text-5xl md:text-6xl font-extrabold gradient-text drop-shadow-lg"
         >
-          Achievements
+          Impact Highlights
         </motion.h2>
 
         <motion.p
@@ -137,7 +95,7 @@ export function Achievements() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-gray-400 text-lg max-w-2xl mx-auto mt-4 leading-relaxed"
         >
-          Some things I&apos;m proud of — from hackathons to community work.
+          Production results focused on scale, latency, and delivery speed.
         </motion.p>
       </div>
 
@@ -176,20 +134,18 @@ export function Achievements() {
                 />
 
                 <CardContent className="relative text-center z-10 flex flex-col items-center justify-between h-full">
-                  <Link href={achievement.url} target="_blank" rel="noopener noreferrer">
-                    <motion.div
-                      className="relative mx-auto w-16 h-16 rounded-full flex items-center justify-center mb-5"
-                      whileHover={{ scale: 1.1 }}
-                    >
-                      <div
-                        className="absolute inset-0 rounded-full"
-                        style={{ background: achievement.color }}
-                      />
-                        <div className="relative z-10 flex items-center justify-center w-full h-full">
-                          <Icon />
-                        </div>
-                    </motion.div>
-                  </Link>
+                  <motion.div
+                    className="relative mx-auto w-16 h-16 rounded-full flex items-center justify-center mb-5"
+                    whileHover={{ scale: 1.1 }}
+                  >
+                    <div
+                      className="absolute inset-0 rounded-full"
+                      style={{ background: achievement.color }}
+                    />
+                    <div className="relative z-10 flex items-center justify-center w-full h-full">
+                      <Icon className="h-7 w-7 text-white/90" />
+                    </div>
+                  </motion.div>
 
                   <div>
                     <h3 className="font-bold text-2xl mb-2">
