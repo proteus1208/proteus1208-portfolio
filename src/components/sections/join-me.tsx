@@ -53,13 +53,12 @@ export function JoinMe() {
 												{item.overview}
 											</p>
 											<div className="space-y-1 mb-4">
-												{item.requirements.map((req, idx) => <div className="mb-2" key={req.items + '_' + idx}>
-													<h4 className="text-lg font-bold italic font font-semibold mb-1">{req.name}</h4>
-													{req.items.map((point, i) => <p key={req.items + '_' + idx + '-' + i} className="text-sm flex items-start">
+												{item.requirements.map((req, idx) => (
+													<p key={`${item.title}-req-${idx}`} className="text-sm flex items-start">
 														<span className="mr-2 text-primary">•</span>
-														<span className="line-clamp-2">{point}</span>
-													</p>)}
-												</div>)}
+														<span className="line-clamp-2">{req}</span>
+													</p>
+												))}
 											</div>
 										</CardContent>
 										<div className="relative h-160 overflow-hidden bg-gradient-to-br from-primary/10 via-accent/10 to-primary/10">
