@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
   name: "Tymon Charles Blow",
   description:
     "Senior Full Stack Engineer with 8+ years building scalable web and mobile applications across JavaScript, Java, and Python ecosystems.",
-  url: "https://proteus1208.github.io",
+  url: "https://proteus1208-portfolio.vercel.app",
   ogImage: "/me/me.png",
   location: "Harker Heights, TX",
   phone: "+18563980906",
