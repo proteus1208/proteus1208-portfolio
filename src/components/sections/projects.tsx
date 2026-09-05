@@ -26,10 +26,7 @@ export function Projects() {
 
   const categories = [
     { value: "all", label: "All Projects" },
-    { value: "mobile", label: "Mobile" },
     { value: "web", label: "Web" },
-    { value: "blockchain", label: "Blockchain" },
-    { value: "ai", label: "AI" },
   ];
 
   return (
@@ -95,6 +92,7 @@ export function Projects() {
                         src={project.image}
                         alt={project.title}
                         fill
+                        unoptimized
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         onError={(e) => {

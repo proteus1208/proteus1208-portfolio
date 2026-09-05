@@ -4,6 +4,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Sparkles, Code2 } from "lucide-react";
+import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ShootingStars } from "@/components/ui/shooting-stars";
@@ -83,6 +84,19 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         </div>
 
         <Card className="relative z-10 h-full rounded-2xl border border-zinc-800/80 bg-zinc-950/80 text-white shadow-[0_18px_45px_rgba(0,0,0,0.7)] backdrop-blur-md overflow-hidden transition-all duration-500 group-hover:shadow-[0_25px_60px_rgba(78,205,196,0.15)]">
+
+          {project.image && (
+            <div className="relative h-48 w-full overflow-hidden bg-zinc-900">
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+              />
+            </div>
+          )}
 
           {/* Cursor spotlight effect */}
           {isHovered && (

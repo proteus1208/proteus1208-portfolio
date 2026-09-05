@@ -1,20 +1,16 @@
 // App constants
 
 export const SITE_CONFIG = {
-  name: "Mark Kinsley Rimando",
+  name: "Walker Martins de Oliveira",
   description:
-    "Tech Stack Hybrid Intelligent Next-Gen Engineer & Technology | Full-stack Developer | Community Builder | AI & Web Enthusiast",
-  url: "https://proteus1208.github.io",
+    "Full-Stack Engineer with 10 years of experience building production web products in React, Next.js, and TypeScript.",
+  url: "https://proteus1208-portfolio.vercel.app",
   ogImage: "/me/me.png",
+  location: "Sao Luis de Montes Belos, Goias, Brazil",
+  phone: "+55 (64) 9 8432-2301",
   links: {
-    email: "proteus1208@gmail.com",
+    email: "walker1996top@outlook.com",
     github: "https://github.com/proteus1208",
-    telegram: "https://t.me/proteus1208",
-    // leetcode: "https://leetcode.com/tshingen01",
-    // linkedin: "https://www.linkedin.com/in/mark-kinsley-rimando-9b1a4b1b2/",
-    // hackerrank: "https://www.hackerrank.com/profile/tshingen821",
-    // devTo: "https://dev.to/tshingen01",
-    // stackOverflow: "https://stackoverflow.com/users/32788228/tshingen01",
   }
 };
 
@@ -23,7 +19,6 @@ export const NAV_ITEMS = [
   { label: "About", href: "/about" },
   { label: "Experience", href: "/experience" },
   { label: "Projects", href: "/projects" },
-  { label: "Join Me", href: "/join-me" }
 ];
 
 export const ANIMATION_VARIANTS = {

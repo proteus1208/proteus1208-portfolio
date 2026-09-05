@@ -73,7 +73,7 @@ export function Navbar() {
               className="font-display text-xl font-bold transition-all hover:opacity-80 group"
             >
               <span className="gradient-text tracking-tight">
-                TSHINGEN
+                Walker Oliveira
               </span>
             </Link>
 
@@ -143,7 +143,7 @@ export function Navbar() {
                         className="font-display text-2xl font-bold"
                       >
                         <SheetTitle>
-                          Mark Kinsley Rimando
+                          Walker Martins de Oliveira
                         </SheetTitle>
                       </Link>
                     </div>

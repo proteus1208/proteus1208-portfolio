@@ -12,41 +12,30 @@ export interface SkillCategory {
 
 export const skillsData: SkillCategory[] = [
   {
-    title: "Programming Languages",
-    icon: "💻",
-    skills: [
-      { name: "JavaScript", level: 90 },
-      { name: "TypeScript", level: 85 },
-      { name: "python", level: 88 },
-      { name: "Java", level: 85 },
-      { name: "C++", level: 80 },
-      { name: "SQL", level: 85 }
-    ]
-  },
-  {
-    title: "Frontend Development",
+    title: "Frontend",
     icon: "🎨",
     skills: [
-      { name: "React.js", level: 90 },
-      { name: "Next.js", level: 85 },
-      { name: "Vue.js", level: 85 },
+      { name: "React / Next.js", level: 92 },
+      { name: "TypeScript / JavaScript", level: 92 },
       { name: "Tailwind CSS", level: 88 },
-      { name: "Three.js", level: 75 },
-      { name: "Nest.js", level: 80 }
-    ]
+    ],
   },
   {
-    title: "Backend & Databases",
+    title: "Backend & APIs",
     icon: "⚙️",
     skills: [
-      { name: "Node.js", level: 89 },
-      { name: "Express", level: 88 },
-      { name: "SupaBase", level: 74 },
-      { name: "MYSQL", level: 85 },
-      { name: "POSTGRESQL", level: 80 },
-      { name: "MongoDB", level: 90 },
-      { name: "MYSQL", level: 85 },
-      { name: "Firebase", level: 90 }
-    ]
+      { name: "Node.js", level: 90 },
+      { name: "REST APIs", level: 90 },
+      { name: "GraphQL", level: 86 },
+    ],
+  },
+  {
+    title: "Data & Cloud",
+    icon: "☁️",
+    skills: [
+      { name: "PostgreSQL / MongoDB / Redis", level: 90 },
+      { name: "AWS / Docker / Kubernetes", level: 88 },
+      { name: "CI/CD", level: 88 },
+    ],
   },
 ];

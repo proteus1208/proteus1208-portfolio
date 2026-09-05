@@ -4,8 +4,9 @@ import { SkillsShowcase} from "@/components/sections/skills";
 import { Achievements } from "@/components/sections/achievements";
 
 export const metadata: Metadata = {
-  title: "About | Mark Kinsley Rimando",
-  description: "Learn more about Mark Kinsley Rimando - Bachelor in Computer Science student at SLU University",
+  title: "About | Walker Martins de Oliveira",
+  description:
+    "Learn more about Walker Martins de Oliveira — Full-Stack Engineer with 10 years of experience in React, Next.js, and TypeScript.",
 };
 
 export default function AboutPage() {

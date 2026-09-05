@@ -8,17 +8,29 @@ export interface Achievement {
 
 export const achievementsData: Achievement[] = [
   {
-    id: "coders-circle",
-    title: "Co-Founder",
-    organization: "Coders Circle",
-    description: "Built and scaled a growing tech community focused on coding culture, collaboration, and peer learning.",
+    id: "cit-performance",
+    title: "Frontend Performance Delivery",
+    organization: "CI&T",
+    description:
+      "Led customer-facing React and Next.js modules with measurable Lighthouse and TTFB gains for high-traffic pages.",
     impact: [
-      "Created a tech community of 1500+ students and developers",
-      "Organized tech sessions, networking events, and collaborative coding spaces",
-      "Encouraged open-source contributions and project-based learning",
-      "Built leadership and community engagement initiatives"
+      "Improved Lighthouse performance scores by 28 percent across 8 modules",
+      "Reduced median TTFB by 35 percent for 50,000 monthly users",
+      "Raised pull-request first-pass approval rate by 30 percent through mentoring",
     ],
-  }
+  },
+  {
+    id: "zup-scale",
+    title: "API and Platform Scale",
+    organization: "Zup Innovation",
+    description:
+      "Shipped full-stack features and data APIs that supported enterprise programs and seasonal traffic peaks.",
+    impact: [
+      "Served 80,000 daily authenticated requests with REST and GraphQL APIs",
+      "Cut Next.js bundle size by 40 percent and improved TTI by 1.2 seconds",
+      "Reduced failed production hotfixes by 25 percent with GitHub Actions CI/CD",
+    ],
+  },
 ];
 
 export interface Education {
@@ -31,17 +43,10 @@ export interface Education {
 
 export const educationData: Education[] = [
   {
-    id: "slu",
-    institution: "Saint Louis University (PN)",
-    degree: "BS Information Technology Engineering",
-    duration: "2013 - 2018",
-    location: "Baguio, Philippines",
-  },
-  {
-    id: "slc",
-    institution: "Saint Louis Collage of San Fernando",
-    degree: "High School Diploma",
-    duration: "2009 - 2013",
-    location: "San Fernando City, Philippines",
+    id: "ufrn",
+    institution: "Federal University of Rio Grande do Norte",
+    degree: "Bachelor's Degree",
+    duration: "September 2014 – June 2018",
+    location: "Natal, Rio Grande do Norte, Brazil",
   },
 ];

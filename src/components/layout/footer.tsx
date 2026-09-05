@@ -3,9 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
-import { FaGithub, FaTelegram, FaHackerrank, FaStackOverflow, FaLinkedinIn  } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
-import { BiLogoDevTo } from "react-icons/bi";
+import { FaGithub } from "react-icons/fa";
 import { SITE_CONFIG, NAV_ITEMS } from "@/lib/constants";
 const socialLinks = [
   {
@@ -14,48 +12,12 @@ const socialLinks = [
     label: "Email",
     color: "rgba(78, 205, 196, 0.2)",
   },
-  // {
-  //   icon: FaLinkedinIn,
-  //   href: SITE_CONFIG.links.linkedin,
-  //   label: "LinkedIn",
-  //   color: "rgba(78, 205, 196, 0.2)",
-  // },
   {
     icon: FaGithub,
     href: SITE_CONFIG.links.github,
     label: "GitHub",
     color: "rgba(78, 205, 196, 0.2)",
   },
-  {
-    icon: FaTelegram,
-    href: SITE_CONFIG.links.telegram,
-    label: "Telegram",
-    color: "rgba(216, 178, 242, 0.2)",
-  },
-  // {
-  //   icon: SiLeetcode,
-  //   href: SITE_CONFIG.links.leetcode,
-  //   label: "LeetCode",
-  //   color: "rgba(78, 205, 196, 0.2)",
-  // },
-  // {
-  //   icon: FaHackerrank,
-  //   href: SITE_CONFIG.links.hackerrank,
-  //   label: "HackerRank",
-  //   color: "rgba(78, 205, 196, 0.2)",
-  // },
-  // {
-  //   icon: BiLogoDevTo,
-  //   href: SITE_CONFIG.links.devTo,
-  //   label: "Dev.to",
-  //   color: "rgba(78, 205, 196, 0.2)",
-  // },
-  // {
-  //   icon: FaStackOverflow,
-  //   href: SITE_CONFIG.links.stackOverflow,
-  //   label: "Stack Overflow",
-  //   color: "rgba(78, 205, 196, 0.2)",
-  // }
 ];
 
 export function Footer() {
@@ -125,10 +87,10 @@ export function Footer() {
               className="space-y-3"
             >
               <h3 className="font-display text-lg font-bold gradient-text">
-                Mark Kinsley Rimando
+                Walker Martins de Oliveira
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Tech Stack Hybrid Intelligent Next-Gen Engineer
+                Senior Full Stack Developer · Sao Luis de Montes Belos, Brazil
               </p>
             </motion.div>
 
