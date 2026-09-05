@@ -8,17 +8,41 @@ export interface Achievement {
 
 export const achievementsData: Achievement[] = [
   {
-    id: "coders-circle",
-    title: "Co-Founder",
-    organization: "Coders Circle",
-    description: "Built and scaled a growing tech community focused on coding culture, collaboration, and peer learning.",
+    id: "rag-pipeline",
+    title: "RAG Pipeline Delivery",
+    organization: "Freelance",
+    description:
+      "Built a Retrieval-Augmented Generation pipeline with LangChain, pgvector, and Redis for production support workflows.",
     impact: [
-      "Created a tech community of 1500+ students and developers",
-      "Organized tech sessions, networking events, and collaborative coding spaces",
-      "Encouraged open-source contributions and project-based learning",
-      "Built leadership and community engagement initiatives"
+      "40% faster and more accurate support ticket resolution",
+      "LLM services served via REST and GraphQL APIs",
+      "Dockerized AI services with CI/CD for model versioning",
     ],
-  }
+  },
+  {
+    id: "healthcare-ai",
+    title: "Clinical AI Assistant",
+    organization: "ReachLink",
+    description:
+      "Shipped AI-powered clinical and patient-facing features on a healthcare platform.",
+    impact: [
+      "Reduced manual triage assessment time by 20%",
+      "Improved patient satisfaction scores by 15% with OpenAI chatbots",
+      "Deployed ML pipelines on AWS with MLflow tracking",
+    ],
+  },
+  {
+    id: "fintech-ml",
+    title: "Credit Scoring Microservice",
+    organization: "Kueski",
+    description:
+      "Delivered production ML for fintech risk assessment and loan approval workflows.",
+    impact: [
+      "Real-time credit scoring with Scikit-learn on high-volume financial data",
+      "60% reduction in API response times with Redis caching",
+      "10% improvement in loan approval accuracy",
+    ],
+  },
 ];
 
 export interface Education {
@@ -31,17 +55,10 @@ export interface Education {
 
 export const educationData: Education[] = [
   {
-    id: "slu",
-    institution: "Saint Louis University (PN)",
-    degree: "BS Information Technology Engineering",
-    duration: "2013 - 2018",
-    location: "Baguio, Philippines",
-  },
-  {
-    id: "slc",
-    institution: "Saint Louis Collage of San Fernando",
-    degree: "High School Diploma",
-    duration: "2009 - 2013",
-    location: "San Fernando City, Philippines",
+    id: "hku",
+    institution: "The University of Hong Kong",
+    degree: "Bachelor's Degree, Computer Science",
+    duration: "August 2011 – May 2015",
+    location: "Hong Kong",
   },
 ];

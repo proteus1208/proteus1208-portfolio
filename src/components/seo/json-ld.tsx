@@ -6,49 +6,41 @@ export function JsonLd() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Mark Kinsley Rimando",
-    alternateName: "MKR",
+    name: SITE_CONFIG.name,
     url: SITE_CONFIG.url,
     email: SITE_CONFIG.links.email,
-    jobTitle: "Senior Full-Stack Developer",
+    telephone: SITE_CONFIG.phone,
+    jobTitle: "Full Stack & AI Engineer",
     description: SITE_CONFIG.description,
-    sameAs: [
-      SITE_CONFIG.links.github,
-    ],
-    alumniOf: educationData.map(edu => ({
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Ahuacatlán",
+      addressRegion: "Nayarit",
+      addressCountry: "MX",
+    },
+    sameAs: [SITE_CONFIG.links.github, SITE_CONFIG.links.linkedin],
+    alumniOf: educationData.map((edu) => ({
       "@type": "EducationalOrganization",
       name: edu.institution,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: edu.location.split(", ")[0],
-        addressCountry: edu.location.split(", ")[1],
-      },
     })),
-    worksFor: experienceData.map(exp => ({
+    worksFor: experienceData.map((exp) => ({
       "@type": "Organization",
       name: exp.company,
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: exp.location,
-      },
     })),
     knowsAbout: [
-      "Cloud Computing",
       "Full Stack Development",
       "Machine Learning",
-      "Blockchain",
-      "AWS",
-      "Azure",
+      "LangChain",
+      "RAG",
       "React",
-      "Node.js",
+      "Next.js",
       "Python",
+      "Node.js",
+      "AWS",
+      "MLOps",
       "TypeScript",
     ],
-    memberOf: achievementsData.map(achievement => ({
-      "@type": "Organization",
-      name: achievement.organization,
-      description: achievement.description,
-    })),
+    award: achievementsData.map((a) => a.title),
   };
 
   return (

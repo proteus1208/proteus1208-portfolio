@@ -91,7 +91,7 @@ export function JoinMe() {
 									</div>)}
 								<div className="border-b border-muted-foreground/20 my-6" />
 								<motion.a
-									href={SITE_CONFIG.links.telegram}
+									href={`mailto:${SITE_CONFIG.links.email}`}
 									target="_blank"
 									rel="noopener noreferrer"
 									className="relative h-12 rounded-full flex items-center border border-white/10 text-muted-foreground hover:text-primary transition-all duration-300 overflow-hidden group"

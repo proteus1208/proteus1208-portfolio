@@ -10,28 +10,20 @@ export const generateMetadata = (): Metadata => {
     },
     description: SITE_CONFIG.description,
     keywords: [
-      "Mark",
-      "Kinsley",
-      "Rimando",
-      "Portfolio",
-      "Senior Full-Stack Developer",
-      "Tech enthutiast",
-      "SLU",
-      "Computer Science",
+      "Pablo Alejandro Sanchez Moncada",
+      "Full Stack AI Engineer",
       "React",
       "Next.js",
-      "JavaScript",
+      "TypeScript",
+      "Python",
+      "LangChain",
+      "RAG",
       "AWS",
-      "Azure",
-      "Machine Learning",
-      "Blockchain",
+      "Docker",
+      "MLOps",
+      "Node.js",
     ],
-    authors: [
-      {
-        name: SITE_CONFIG.name,
-        url: SITE_CONFIG.url,
-      },
-    ],
+    authors: [{ name: SITE_CONFIG.name, url: SITE_CONFIG.url }],
     creator: SITE_CONFIG.name,
     openGraph: {
       type: "website",
@@ -54,7 +46,6 @@ export const generateMetadata = (): Metadata => {
       title: SITE_CONFIG.name,
       description: SITE_CONFIG.description,
       images: [SITE_CONFIG.ogImage],
-      creator: "@markKrimando",
     },
     robots: {
       index: true,
@@ -67,20 +58,13 @@ export const generateMetadata = (): Metadata => {
         "max-snippet": -1,
       },
     },
-    verification: {
-      google: "your-google-verification-code",
-      yandex: "your-yandex-verification-code",
-    },
     icons: {
       icon: [
         { url: "/icons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
         { url: "/icons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
       ],
-      apple: [
-        { url: "/apple-icon.png", sizes: "180x180", type: "image/png" },
-      ],
+      apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
     },
-
     manifest: "/site.webmanifest",
   };
 };

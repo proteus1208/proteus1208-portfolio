@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import { projects } from "@/data/projects";
 import { ANIMATION_VARIANTS } from "@/lib/constants";
 import { ExternalLink, Github, Smartphone, Globe, Link2, Brain } from "lucide-react";
@@ -26,9 +25,7 @@ export function Projects() {
 
   const categories = [
     { value: "all", label: "All Projects" },
-    { value: "mobile", label: "Mobile" },
     { value: "web", label: "Web" },
-    { value: "blockchain", label: "Blockchain" },
     { value: "ai", label: "AI" },
   ];
 
@@ -91,16 +88,11 @@ export function Projects() {
                 <Card className="flex flex-col group h-full overflow-hidden hover:shadow-xl transition-all duration-300 border-border/50 hover:border-primary/50">
                   <div className="relative h-56 overflow-hidden bg-gradient-to-br from-primary/10 via-accent/10 to-primary/10">
                     {project.image ? (
-                      <Image
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
                         src={project.image}
                         alt={project.title}
-                        fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        onError={(e) => {
-                          console.error(`Failed to load image: ${project.image}`);
-                          e.currentTarget.style.display = 'none';
-                        }}
+                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                     ) : (
                       <div className="absolute inset-0 flex items-center justify-center">

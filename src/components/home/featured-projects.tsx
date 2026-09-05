@@ -84,6 +84,17 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
         <Card className="relative z-10 h-full rounded-2xl border border-zinc-800/80 bg-zinc-950/80 text-white shadow-[0_18px_45px_rgba(0,0,0,0.7)] backdrop-blur-md overflow-hidden transition-all duration-500 group-hover:shadow-[0_25px_60px_rgba(78,205,196,0.15)]">
 
+          {project.image && (
+            <div className="relative h-48 w-full overflow-hidden bg-zinc-900">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={project.image}
+                alt={project.title}
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+          )}
+
           {/* Cursor spotlight effect */}
           {isHovered && (
             <motion.div
